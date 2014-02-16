@@ -1,0 +1,121 @@
+/*start resets*/
+html, body{
+	font-family: Consolas, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+/*end resets*/
+
+#main_container{
+	background-color:black;
+}
+
+#chat_container{
+	width: 100%;
+	height: 97%;
+	position: relative;
+
+}
+
+#chat{
+	
+	font-size:14px;
+	width: 74.5%;
+	height: 100%;
+	overflow: auto;
+	word-wrap:break-word;
+  	text-overflow: ellipsis;
+	float: left;
+	display: inline-block;
+	
+	background: -moz-radial-gradient(center, ellipse cover,  #a0a0a0 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a0a0a0), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #a0a0a0 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+}
+
+#chat b{
+	color: white;
+}
+
+#chat b own{
+	color: green;
+}
+
+#userlist{
+	float:right;
+	width:25%;
+	height:100%;
+	text-align:center;
+	overflow: auto;
+
+	background: -moz-linear-gradient(top,  #000000 4%, #474747 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(4%,#000000), color-stop(100%,#474747)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000000 4%,#474747 100%); /* Chrome10+,Safari5.1+ */
+
+}
+
+
+#userlist h2{
+	font-size: 20px;
+}
+
+#chat_input{
+	
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+#data{
+	float: left;
+    width: 80%;
+}
+#notPerm{
+	width: 20%;
+	float: left;
+
+}
+
+/*users ul*/
+#users{
+	padding: 0;
+	list-style-type: none;
+}
+/*user li*/
+.user{
+	padding-top: 5px;
+	height: 30px;
+	width: 100%;
+	/*border-bottom: 1px solid #aaa;*/
+
+}
+
+.user:hover{
+	-webkit-animation: glow 0.3s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0 0 0px #9ecaed;
+  }
+  25%{
+  	box-shadow: 0 0 5px #9ecaed;
+  }
+  50% {
+	box-shadow: 0 0 10px #9ecaed;
+  }
+  75%{
+	box-shadow: 0 0 15px #9ecaed;
+  }
+  100% {
+	box-shadow: 0 0 20px #9ecaed;
+  }
+}

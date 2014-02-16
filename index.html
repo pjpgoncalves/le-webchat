@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="css/chat.css" />
+<div id="main_container">
+    <div id="chat_container">
+        <div>
+            <div id="chat">
+            </div>
+            <div id="userlist">
+                <h2>Users</h2>
+                <ul id="users">
+                    <!-- users will  be added here -->
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div id="chat_input">
+        <input id="data" />
+        <input type="button" id="datasend" value="send" style="display:none;" />
+
+        <button id="notPerm" type="button">Autorizar notificações</button>
+    </div>
+</div>
+<audio id="chat_sound" style="display:none;">
+  <source src="/sound/tick.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
